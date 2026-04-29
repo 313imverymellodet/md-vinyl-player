@@ -3659,12 +3659,18 @@
 
       .deck-footer {
         left: 8%;
-        right: 8%;
+        right: auto;
+        width: min(84vw, 330px);
         bottom: 4.2%;
         display: block;
       }
 
       .turntable .deck-footer .now-playing {
+        width: 100%;
+      }
+
+      .turntable .deck-footer .time-row,
+      .turntable .deck-footer .progress-wrap {
         width: 100%;
       }
 
@@ -4302,14 +4308,14 @@
     // like "music/song.mp3" and "covers/cover.jpg", or paste hosted URLs.
     const DAILY_RECORDS = [
       {
-        title: "Midnight Static",
-        artist: "Nova Vale",
-        album: "After Hours Selects",
-        duration: "3:42",
-        audioSrc: "",
-        coverSrc: "",
-        coverGradient: "radial-gradient(circle at 26% 22%, rgba(255,255,255,0.35), transparent 0 17%), linear-gradient(135deg, #ff375f, #24162f 52%, #0a84ff)",
-        coverColors: ["#ff375f", "#24162f", "#0a84ff", "#64d2ff"],
+        title: "Come And See Me",
+        artist: "PARTYNEXTDOOR ft. Drake",
+        album: "PX3",
+        duration: "3:58",
+        audioSrc: "music/come-and-see-me.mp3",
+        coverSrc: "covers/px3-come-and-see-me.jpg",
+        coverGradient: "radial-gradient(circle at 40% 30%, rgba(255,255,255,0.18), transparent 0 22%), linear-gradient(135deg, #1a1a1a, #0d0d0d 60%, #2a2a2a)",
+        coverColors: ["#1a1a1a", "#0d0d0d", "#ffffff", "#888888"],
         vinylStyle: "black"
       },
       {
